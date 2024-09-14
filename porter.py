@@ -59,7 +59,7 @@ def batch_port(source_lst, portfunc):
         ported = portfunc(symbol.address)
         
         if ported > 0x0:
-            ported_syms.append(f"{hex(ported)}:{symbol.name}")
+            ported_syms.append(f"{hex(ported)[2:]}:{symbol.name}")
         else:
             print(f"Skipping {symbol.name} (failed to port)")
             
