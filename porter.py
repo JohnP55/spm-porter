@@ -22,7 +22,7 @@ def fwdport(address):
         return address
     
     for match in matches:
-        if not match.contains(address):
+        if not match.source_contains(address):
             continue
         return address - match.source_start + match.target_start
     return 0x0

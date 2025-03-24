@@ -572,6 +572,7 @@
 // OSInterrupt.c
 80273ed8:OSDisableInterrupts
 80273f00:OSRestoreInterrupts
+80274368:__OSDispatchInterrupt
 // OSLink.c
 80274c0c:OSLink
 // more
